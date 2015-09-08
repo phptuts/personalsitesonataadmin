@@ -1,0 +1,22 @@
+{% extends 'AppBundle:Admin:standard_layout.html.twig' %}
+{% form_theme pageForm 'bootstrap_3_layout.html.twig' %}
+
+{% block sonata_admin_content %}
+    
+            
+            {{ form_start(pageForm, {'attr' : {'class' : 'col-md-8'} }) }}
+            <div class="form-group">
+                <h1>Page Settings</h1>
+            </div>
+            {{ form_row(pageForm.contactTitle, {'label' : 'Contact Title Page'}) }}
+            {{ form_row(pageForm.contactMessage, {'label' : 'Contact Paragraph'}) }}
+            {{ form_row(pageForm.aboutTitle, {'label' : 'About Title'}) }}
+            {{ form_row(pageForm.aboutMessage, {'label' : 'About Message'}) }}
+            {{ form_row(pageForm.communityTitle, {'label' : 'Community Title'}) }}
+            {{ form_row(pageForm.communityMessage, {'label' : 'Community Message'}) }}
+            <div class="form-group">
+                <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+            {{ form_end(pageForm) }}
+
+{% endblock %}

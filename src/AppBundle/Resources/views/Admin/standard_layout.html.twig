@@ -1,0 +1,32 @@
+{# empty Twig template #}
+
+{% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet" media="all" />
+{% endblock %}
+{% block side_bar_after_nav %}
+       <ul class="sidebar-menu">
+            <li {% if app.request.attributes.get('_route')  == 'sonata_admin_dashboard' %}class="active"{% endif %}>
+                <a href="{{ path('sonata_admin_dashboard') }}">Home</a>
+            </li>     
+            <li {% if app.request.attributes.get('_route')  == 'admin_app_user_pageinfo' %}class="active"{% endif %}>
+                <a href="{{ path('admin_app_user_pageinfo') }}">Page Settings</a>
+            </li> 
+            {% for menuItem in admin_pool.dashboardgroups["Admin"].items %}
+                <li{% if app.request.get('_sonata_admin') == menuItem.code %} class="active"{% endif %}>
+                    <a href="{{ menuItem.generateUrl('list')}}">{{ menuItem.label|trans({}, menuItem.translationdomain) }}</a>
+                </li>
+            {% endfor %}
+       </ul>     
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('js/thirdparty/bootstrap-file-input/bootstrap.file-input.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input[type=file]').bootstrapFileInput();
+        });
+    </script>
+{% endblock %}

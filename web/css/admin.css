@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 7, 2015, 7:19:55 PM
+    Author     : student
+*/
+/* line 10, stdin */
+.skin-black .logo, .skin-black .left-side {
+  background-color: #000; }
+
+/* line 15, stdin */
+.sidebar ul, .sidebar li {
+  padding-top: 20px; }
+
+/* line 19, stdin */
+.btn-upload-space {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkbWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTtBQUNGOzs7RUFHRTs7QUFDNkIsV0FBVyxDQUFDLEtBQUssRUFBRSxXQUFXLENBQUMsVUFBVSxDQUE5QjtFQUN0QyxnQkFBZ0IsRUFBQyxJQUFLLEdBRGlCOzs7QUFLckIsUUFBUSxDQUFDLEVBQUUsRUFBRSxRQUFRLENBQUMsRUFBRSxDQUFyQjtFQUNyQixXQUFXLEVBQUMsSUFBSyxHQURLOzs7QUFJMUIsaUJBQWlCLENBQUM7RUFDZCxhQUFhLEVBQUUsSUFBSyxHQURMIiwiZmlsZSI6ImFkbWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG5UbyBjaGFuZ2UgdGhpcyBsaWNlbnNlIGhlYWRlciwgY2hvb3NlIExpY2Vuc2UgSGVhZGVycyBpbiBQcm9qZWN0IFByb3BlcnRpZXMuXG5UbyBjaGFuZ2UgdGhpcyB0ZW1wbGF0ZSBmaWxlLCBjaG9vc2UgVG9vbHMgfCBUZW1wbGF0ZXNcbmFuZCBvcGVuIHRoZSB0ZW1wbGF0ZSBpbiB0aGUgZWRpdG9yLlxuKi9cbi8qIFxuICAgIENyZWF0ZWQgb24gOiBTZXAgNywgMjAxNSwgNzoxOTo1NSBQTVxuICAgIEF1dGhvciAgICAgOiBzdHVkZW50XG4qL1xuLnNraW4tYmxhY2sgLmxvZ28sIC5za2luLWJsYWNrIC5sZWZ0LXNpZGUge1xuICAgIGJhY2tncm91bmQtY29sb3I6IzAwMDtcbn1cblxuXG4uc2lkZWJhciB1bCwgLnNpZGViYXIgbGkge1xuICAgIHBhZGRpbmctdG9wOjIwcHg7XG59XG5cbi5idG4tdXBsb2FkLXNwYWNlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG5cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

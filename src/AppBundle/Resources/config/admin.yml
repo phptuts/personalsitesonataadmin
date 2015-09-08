@@ -1,0 +1,26 @@
+## YAML Template.
+---
+services:
+    app.admin.user:
+        class: AppBundle\Admin\UserAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Admin", label: "Users"}
+        arguments: [null, AppBundle\Entity\User, AppBundle:Admin\User ]
+        calls:
+            - [ setTranslationDomain, [SonataAdminBundle]]
+
+    app.admin.page:
+        class: AppBundle\Admin\PageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Pages", label: "Users"}
+        arguments: [null, AppBundle\Entity\User, AppBundle:Admin\Page ]
+        calls:
+            - [ setTranslationDomain, [SonataAdminBundle]]
+
+    app.admin.job:
+        class: AppBundle\Admin\JobAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Admin", label: "Jobs"}
+        arguments: [null, AppBundle\Entity\Job, null ]
+        calls:
+            - [ setTranslationDomain, [SonataAdminBundle]]

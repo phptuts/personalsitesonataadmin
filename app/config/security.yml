@@ -1,0 +1,29 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+    encoders:
+        AppBundle\Entity\User:
+            algorithm: bcrypt
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    providers:
+        our_db_provider:
+            entity:
+                class: AppBundle:User
+                property: email
+                    
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_SONATA_ADMIN
+
+
+    firewalls:
+        default:
+            pattern: ^/
+            anonymous: true
+            form_login:
+                login_path: /login
+                check_path: /login_check
+                default_target_path: sonata_admin_dashboard
+                always_use_default_target_path: true
+ 
+    

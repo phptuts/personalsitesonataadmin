@@ -1,0 +1,8 @@
+resume_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AppBundle:Default:index }
+
+security:
+    resource: "@AppBundle/Controller/SecurityController.php"
+    type:     annotation
+
